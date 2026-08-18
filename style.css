@@ -32,8 +32,6 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
-html, body { overflow-x: hidden; width: 100%; }
-
 body {
   margin: 0;
   background: var(--ivory);
@@ -480,7 +478,7 @@ section { padding: clamp(64px, 9vw, 108px) 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,21,32,0) 40%, rgba(10,21,32,0.92) 100%);
+  background: linear-gradient(180deg, rgba(10,21,32,0) 22%, rgba(10,21,32,0.55) 55%, rgba(10,21,32,0.95) 100%);
 }
 .service-card-body {
   position: absolute;
@@ -494,9 +492,10 @@ section { padding: clamp(64px, 9vw, 108px) 0; }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold-light);
+  background: rgba(10,21,32,0.65);
   border: 1px solid rgba(228,194,117,0.5);
   display: inline-block;
-  padding: 3px 8px;
+  padding: 4px 9px;
   border-radius: 3px;
   margin-bottom: 10px;
 }
@@ -662,14 +661,77 @@ section { padding: clamp(64px, 9vw, 108px) 0; }
 }
 @media (max-width: 760px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 500px) {
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
+  .footer-grid > div:last-child { grid-column: 1 / -1; }
 }
 
 /* ==========================================================================
-   Sticky WhatsApp button
+   Coming soon placeholder sections
    ========================================================================== */
+.coming-soon {
+  background: var(--navy-950);
+  min-height: 62vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.coming-soon::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgba(201,162,95,0.15);
+  border-radius: 50%;
+}
+.coming-soon::after {
+  content: "";
+  position: absolute;
+  left: -100px;
+  bottom: -140px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(201,162,95,0.1);
+  border-radius: 50%;
+}
+.coming-soon .wrap {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.coming-soon .plate {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+  border-radius: 3px;
+  margin-bottom: 26px;
+}
+.coming-soon h1 {
+  color: var(--ivory);
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  max-width: 16ch;
+  line-height: 1.08;
+}
+.coming-soon p.lede {
+  color: var(--ivory-dim);
+  font-size: 1.05rem;
+  max-width: 50ch;
+  margin: 20px 0 36px;
+}
+.coming-soon .actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
 .whatsapp-fab {
   position: fixed;
   right: 22px;
