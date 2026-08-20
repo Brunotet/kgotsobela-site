@@ -97,6 +97,75 @@
     </div>
   </section>
 
+  <!-- BRAND GALLERY -->
+  <section class="brand-gallery" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Behind the brand</p>
+        <h2>Our crew, our vans, our sites.</h2>
+        <p>A closer look at Kgotsobela Consortium on the job across Mbombela and Mpumalanga. Click a photo to bring it forward, or click the front photo to view it full screen.</p>
+      </div>
+
+      <div class="gallery-stage" data-gallery tabindex="0" aria-label="Kgotsobela Consortium photo gallery, use left and right arrow keys to browse">
+        <button type="button" class="gallery-arrow gallery-arrow-prev" data-gallery-prev aria-label="Show previous photo">&#8249;</button>
+
+        <div class="gallery-track" data-gallery-track>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 1 of 11, full screen">
+            <img src="images/gallery-van-loadout.jpg" alt="Kgotsobela Consortium branded service van being loaded on site" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 2 of 11, full screen">
+            <img src="images/gallery-crew-stairwell.jpg" alt="Technicians in full PPE climbing rooftop plant stairs" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 3 of 11, full screen">
+            <img src="images/gallery-rooftop-teamwork.jpg" alt="Two technicians servicing rooftop HVAC plant against a clear sky" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 4 of 11, full screen">
+            <img src="images/gallery-rooftop-inspection.jpg" alt="Technician inspecting rooftop condenser units" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 5 of 11, full screen">
+            <img src="images/gallery-plantroom-check.jpg" alt="Technician inspecting equipment inside a dark plant room" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 6 of 11, full screen">
+            <img src="images/gallery-van-signage.jpg" alt="Rear view of a Kgotsobela Consortium branded service van with contact details" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 7 of 11, full screen">
+            <img src="images/gallery-control-panel.jpg" alt="Technician working on an HVAC control panel" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 8 of 11, full screen">
+            <img src="images/gallery-chiller-unit.jpg" alt="Industrial chiller unit installed on a rooftop plant deck" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 9 of 11, full screen">
+            <img src="images/gallery-cable-routing.jpg" alt="Technician routing cabling on rooftop plant equipment" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 10 of 11, full screen">
+            <img src="images/gallery-ladder-duo.jpg" alt="Two technicians working from an access ladder on site" loading="lazy">
+          </button>
+          <button type="button" class="gallery-slide" data-gallery-slide aria-label="View photo 11 of 11, full screen">
+            <img src="images/gallery-team-portrait.jpg" alt="Kgotsobela Consortium technician on site in branded workwear" loading="lazy">
+          </button>
+        </div>
+
+        <button type="button" class="gallery-arrow gallery-arrow-next" data-gallery-next aria-label="Show next photo">&#8250;</button>
+      </div>
+
+      <div class="gallery-meta">
+        <span class="gallery-count" data-gallery-count>1 / 11</span>
+        <span class="gallery-hint">Tap a photo to bring it forward &middot; tap the front photo for full screen</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND GALLERY LIGHTBOX -->
+  <div class="gallery-lightbox" data-gallery-lightbox aria-hidden="true">
+    <button type="button" class="lightbox-close" data-gallery-close aria-label="Close full screen gallery">&times;</button>
+    <button type="button" class="lightbox-arrow lightbox-arrow-prev" data-gallery-lb-prev aria-label="Previous photo">&#8249;</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-image" data-gallery-lb-image src="" alt="">
+      <figcaption class="lightbox-counter" data-gallery-lb-counter></figcaption>
+    </figure>
+    <button type="button" class="lightbox-arrow lightbox-arrow-next" data-gallery-lb-next aria-label="Next photo">&#8250;</button>
+  </div>
+
   <!-- SERVICES -->
   <section class="services" id="services">
     <div class="wrap">
@@ -241,5 +310,6 @@
 </a>
 
 <script src="script.js"></script>
+<script src="gallery.js" defer></script>
 </body>
 </html>
