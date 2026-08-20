@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kgotsobelaconsortium.co.za/sitemap.xml
