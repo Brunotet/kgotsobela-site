@@ -659,8 +659,20 @@ section { padding: clamp(44px, 6vw, 80px) 0; }
   font-size: 0.8rem;
   color: rgba(243,239,230,0.4);
 }
-.footer-bottom a { color: inherit; text-decoration: underline; text-underline-offset: 3px; transition: color .2s; }
-.footer-bottom a:hover { color: var(--gold-light); }
+.footer-col .footer-credit {
+  text-align: center;
+  font-size: 1.05rem;
+  margin: 22px 0;
+  color: var(--ivory);
+}
+.footer-col .footer-credit a {
+  display: inline;
+  color: var(--gold-light);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-col .footer-credit a:hover { color: var(--gold); }
 @media (max-width: 760px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid > div:first-child { grid-column: 1 / -1; }
