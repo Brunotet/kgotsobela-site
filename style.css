@@ -664,6 +664,8 @@ section { padding: clamp(44px, 6vw, 80px) 0; }
   font-size: 1.05rem;
   margin: 22px 0;
   color: var(--ivory);
+  white-space: nowrap;
+  width: 100%;
 }
 .footer-col .footer-credit a {
   display: inline;
